@@ -25,7 +25,9 @@ val cardsMap = mapOf(
 )
 
 data class Card(val value: Int, val suit: String, var faceUp: Boolean = false) {
-    override fun toString(): String = if (faceUp) "${cardsMap[value]} ${getSuitChar(suit)}" else "xxx"
+    override fun toString(): String =
+            if (faceUp) "${cardsMap[value]}".padEnd(2) +  "${getSuitChar(suit)}"
+            else "xxx"
 
 
     private fun getSuitChar(suit: String): String = when (suit) {
