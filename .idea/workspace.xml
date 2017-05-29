@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77ecd4f6-fd02-4b01-819e-5dfddbcb6868" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/TableauPileTest.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestKotlin/META-INF/TestKotlin.kotlin_module" afterPath="$PROJECT_DIR$/out/production/TestKotlin/META-INF/TestKotlin.kotlin_module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestKotlin.iml" afterPath="$PROJECT_DIR$/TestKotlin.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Card.kt" afterPath="$PROJECT_DIR$/src/Card.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TableauPile.kt" afterPath="$PROJECT_DIR$/src/TableauPile.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/TableauPileTest.kt" afterPath="$PROJECT_DIR$/test/TableauPileTest.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +33,8 @@
       <file leaf-file-name="Card.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Card.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="162">
+              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding>
                 <element signature="n#!!doc;n#clubs#0" expanded="false" />
               </folding>
@@ -46,8 +45,8 @@
       <file leaf-file-name="TableauPile.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TableauPile.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="134">
+              <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding>
                 <element signature="n#!!doc;n#TableauPile#0" expanded="false" />
               </folding>
@@ -58,8 +57,8 @@
       <file leaf-file-name="TableauPileTest.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/TableauPileTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="80">
+              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -128,11 +127,11 @@
         <option value="$PROJECT_DIR$/src/JavaCard.java" />
         <option value="$PROJECT_DIR$/src/FoundationPile.kt" />
         <option value="$PROJECT_DIR$/src/Deck.kt" />
-        <option value="$PROJECT_DIR$/src/Card.kt" />
-        <option value="$PROJECT_DIR$/src/TableauPile.kt" />
         <option value="$PROJECT_DIR$/src/GameModel.kt" />
         <option value="$PROJECT_DIR$/test/TableauPileTest.java" />
         <option value="$PROJECT_DIR$/test/TableauPileTest.kt" />
+        <option value="$PROJECT_DIR$/src/TableauPile.kt" />
+        <option value="$PROJECT_DIR$/src/Card.kt" />
       </list>
     </option>
   </component>
@@ -182,6 +181,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestKotlin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestKotlin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -207,7 +220,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TableauPileTest.addCards">
+  <component name="RunManager" selected="JUnit.TableauPileTest.removeCards">
     <configuration default="false" name="AppKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="AppKt" />
@@ -229,6 +242,27 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TableauPileTest" />
       <option name="METHOD_NAME" value="addCards" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TableauPileTest.removeCards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TestKotlin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TableauPileTest" />
+      <option name="METHOD_NAME" value="removeCards" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -446,14 +480,16 @@
       <listeners />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Kotlin.AppKt" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TableauPileTest.addCards" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TableauPileTest.removeCards" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TableauPileTest.addCards" />
-        <item index="1" class="java.lang.String" itemvalue="Kotlin.AppKt" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TableauPileTest.removeCards" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TableauPileTest.addCards" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.AppKt" />
       </list>
     </recent_temporary>
   </component>
@@ -473,6 +509,15 @@
   <component name="TestHistory">
     <history-entry file="TableauPileTest_addCards - 2017.05.29 at 12h 08m 56s.xml">
       <configuration name="TableauPileTest.addCards" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TableauPileTest_removeCards - 2017.05.29 at 12h 12m 09s.xml">
+      <configuration name="TableauPileTest.removeCards" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TableauPileTest_removeCards - 2017.05.29 at 12h 13m 50s.xml">
+      <configuration name="TableauPileTest.removeCards" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TableauPileTest_removeCards - 2017.05.29 at 12h 14m 56s.xml">
+      <configuration name="TableauPileTest.removeCards" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -557,16 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Card.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!doc;n#clubs#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GameModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -579,18 +614,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TableauPile.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="134">
+          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding>
             <element signature="n#!!doc;n#TableauPile#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Card.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc;n#clubs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/TableauPileTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        <state relative-caret-position="80">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding />
         </state>
       </provider>
