@@ -2,7 +2,7 @@
  * Created by livin on 29/5/17.
  */
 class GameModel {
-    val Deck = Deck()
+    val deck = Deck()
     val wastePile: MutableList<Card> = mutableListOf()
     val foundationPiles = arrayOf(
             FoundationPile(clubs),
@@ -11,4 +11,82 @@ class GameModel {
             FoundationPile(spades)
     )
     val tableauPiles = Array(7, { TableauPile() })
+
+    fun resetGame() {
+        wastePile.clear()
+        foundationPiles.forEach { it.reset() }
+        deck.reset()
+
+        tableauPiles.forEachIndexed { i, tableauPile ->
+            val cardsInPile: MutableList<Card> = Array(i + 1, { deck.drawCard() }).toMutableList()
+            tableauPiles[i] = TableauPile(cardsInPile)
+        }
+    }
+
+    fun onDeckTap() {
+        if (deck.cardsInDeck.size > 0) {
+            val card = deck.drawCard()
+            card.faceUp = true
+            wastePile.add(card)
+        } else {
+            deck.cardsInDeck = wastePile
+            wastePile.clear()
+        }
+    }
+
+    fun onWasteTap() {
+        if (wastePile.size > 0) {
+            val card = wastePile.last()
+            if (playCard(card)) {
+                wastePile.remove(card)
+            }
+        }
+    }
+
+    fun onFoundationTap(foundationIndex: Int) {
+        val foundationPile = foundationPiles[foundationIndex]
+        if (foundationPile.cards.size > 0) {
+            val card = foundationPile.cards.last()
+            if (playCard(card)) {
+                foundationPile.removeCard(card)
+            }
+        }
+    }
+
+    fun onTableauTap(tableauIndex: Int, cardIndex: Int) {
+        val tableauePile = tableauPiles[tableauIndex]
+        if (tableauePile.cards.size > 0) {
+            val cards = tableauePile.cards.subList(cardIndex, tableauePile.cards.lastIndex + 1)
+            if (playCards(cards)){
+                tableauePile.removeCards(cardIndex)
+            }
+        }
+    }
+
+    private fun playCards(cards: MutableList<Card>): Boolean {
+        if (cards.size == 1){
+            return playCard(cards.first())
+        }else{
+            tableauPiles.forEach {
+                if (it.addCards(cards))
+                    return true
+            }
+        }
+
+        return false
+    }
+
+    private fun playCard(card: Card): Boolean {
+        foundationPiles.forEach {
+            if (it.addCard(card))
+                return true
+        }
+
+        tableauPiles.forEach {
+            if (it.addCards(mutableListOf(card)))
+                return true
+        }
+
+        return false
+    }
 }
