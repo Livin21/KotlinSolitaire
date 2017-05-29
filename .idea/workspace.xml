@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77ecd4f6-fd02-4b01-819e-5dfddbcb6868" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GamePresenter.kt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GameView.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameModel.kt" afterPath="$PROJECT_DIR$/src/GameModel.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.kt" afterPath="$PROJECT_DIR$/src/app.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,13 +76,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameModel.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameModel.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="75" column="20" lean-forward="false" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+            <state relative-caret-position="396">
+              <caret line="63" column="5" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc;n#GameModel#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameView.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GameView.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding>
+                <element signature="n#!!doc;n#GameView#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GamePresenter.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GamePresenter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="n#!!doc;n#GamePresenter#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -106,8 +130,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin File" />
         <option value="JUnit4 Test Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -132,6 +156,8 @@
         <option value="$PROJECT_DIR$/src/Card.kt" />
         <option value="$PROJECT_DIR$/src/app.kt" />
         <option value="$PROJECT_DIR$/src/GameModel.kt" />
+        <option value="$PROJECT_DIR$/src/GameView.kt" />
+        <option value="$PROJECT_DIR$/src/GamePresenter.kt" />
       </list>
     </option>
   </component>
@@ -638,12 +664,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding>
+            <element signature="n#!!doc;n#GameView#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GameModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="75" column="20" lean-forward="false" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+        <state relative-caret-position="396">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc;n#GameModel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GamePresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc;n#GamePresenter#0" expanded="false" />
           </folding>
         </state>
       </provider>
